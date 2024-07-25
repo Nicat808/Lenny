@@ -1,0 +1,48 @@
+@import "../style/General.scss";
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 1440px;
+    padding: 0 120px;
+}
+.slider-container{
+    padding: 0;
+}
+.advertisement-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: $orange-3;
+    border-radius: 16px;
+    img{
+        margin: 0 120px 0 80px;
+    }
+}
+.advertisement-details{
+    width: 483px;
+    h3{
+        @include ExtraHeadings("Eh2");
+        color: $black-1;
+        margin-bottom: 16px
+    }
+    span{
+        @include Paragraphs("P1/18","Regular");
+        color:$grey-1;
+    }
+    .buttons{
+        margin-top: 32px;
+    }
+}
+.buttons{
+    display: flex;
+    gap: 16px;
+}
+// @media (max-width: 1024px) {
+//   .container{
+//       width: 320px;
+// padding: 0 24px;
+//   }
+  
+// }

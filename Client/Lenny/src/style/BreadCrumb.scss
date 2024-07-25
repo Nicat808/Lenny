@@ -1,0 +1,9 @@
+@import "../style//General.scss";
+.breadcrumb{
+   color: rgb(7, 91, 7);
+}
+ol{
+   li:last-child span a{
+      color: $black-1 ;
+   }
+}

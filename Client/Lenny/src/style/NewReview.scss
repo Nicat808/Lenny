@@ -1,0 +1,13 @@
+@import "../style/General.scss";
+.new-review{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid $D-grey-2;
+    border-radius: 8px;
+    input{
+        outline: none;
+        border: 1px solid $grey-3;
+        padding: 8px;
+    }
+}

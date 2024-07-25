@@ -1,0 +1,37 @@
+@import "../style/General.scss";
+
+.article-wrapper{
+    margin: 120px 0;
+}
+.article-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3{
+        @include ExtraHeadings("Eh2");
+    }
+}
+.articles{
+    display: flex;
+    gap:24px ;
+    margin-top: 52px;
+    .article{
+        img{
+            margin-bottom: 16px;
+            transition: 1s ease-in-out;
+        }
+        span{
+            @include Paragraphs("P1/16","Regular");
+            color:$grey-1;
+        }
+        h3{
+            @include ExtraHeadings("Eh6");
+            color: $black-1;
+            margin: 12px 0 4px 0;
+        }
+        &:hover img{
+            transform: rotate3d(2,2,2,360deg);
+            transition: 1s ease-in-out;
+        }
+    }
+}

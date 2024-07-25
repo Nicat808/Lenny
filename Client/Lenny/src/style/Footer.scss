@@ -1,0 +1,56 @@
+@import "../style/General.scss";
+footer{
+    width: 1440px;
+    background-color: $D-grey-3;
+    padding-top: 80px;
+    color:$black-1
+}
+.copyright-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:$L-Grey-1;
+    @include Paragraphs("P1/16","Regular");
+    padding: 16px 120px;
+}
+.copyright-side p{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.about-side{
+    display: flex;
+    padding: 0 120px;
+    margin-bottom: 52px;
+}
+.left-side img{
+margin-bottom: 24px;
+}
+.left-side{
+    margin-right: 96px;
+    p{
+        @include Paragraphs("P1/16","Regular");
+        width: 313px;
+        height: 78px;
+    }
+}
+.right-side{
+display: flex;
+gap: 40px;
+}
+.about-child{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    h1{
+       @include Heading("Eh")
+    }
+    span{
+        cursor: pointer;
+        @include Paragraphs("P2","Regular");
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+

@@ -1,0 +1,115 @@
+@import "../style/General.scss";
+.products-Wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.search-result-container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.filter-options-header {
+  margin: 32px 0 52px 0;
+  display: flex;
+  justify-content: space-between;
+  .options-left {
+    h1 {
+      @include ExtraHeadings("Eh5");
+      color: $black-1;
+      margin-bottom: 4px;
+    }
+    div {
+      color: $grey-1;
+      @include Paragraphs("P1/16", "Regular");
+    }
+  }
+  .options-right {
+    display: flex;
+    gap: 16px;
+    p {
+      @include Paragraphs("P1/16", "Regular");
+      color: $grey-1;
+    }
+  }
+}
+.filter-options-and-products {
+  display: flex;
+  gap: 40px;
+  min-height: 500px;
+  .filter-options {
+    width: 278px;
+    border: 1px solid $D-grey-1;
+    border-radius: 12px;
+    padding: 24px;
+    h4 {
+      text-transform: capitalize;
+      @include ExtraHeadings("Eh6");
+      color: $black-1;
+      padding-bottom: 16px;
+      border-bottom: 1px solid $D-grey-1;
+    }
+  }
+}
+.filter-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sort-price-item {
+  background-color: white;
+  padding: 10px 0;
+  display: flex;
+  border: 1px solid $D-grey-1;
+  border-radius: 8px;
+  padding-right: 12px;
+  input {
+    width: 100%;
+    outline: none;
+    border: none;
+    &::placeholder {
+      @include Paragraphs("P1/16", "Regular");
+      color: $grey-1;
+    }
+  }
+}
+.ant-select-selector {
+  border: none !important;
+  outline: none;
+}
+:where(.css-dev-only-do-not-override-17a39f8).ant-collapse
+  .ant-collapse-content
+  > .ant-collapse-content-box {
+  padding: 0 !important;
+}
+:where(.css-dev-only-do-not-override-17a39f8).ant-collapse
+  .ant-collapse-content
+  > .ant-collapse-content-box {
+  background-color: white;
+}
+:where(.css-dev-only-do-not-override-17a39f8).ant-collapse-borderless
+  > .ant-collapse-item:last-child
+  .ant-collapse-header {
+  background-color: white;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  .ant-collapse-header-text {
+    @include Heading("Eh");
+  }
+}
+.staticSort {
+  width: fit-content;
+  padding: 11px 16px;
+  cursor: pointer;
+  border: 1px solid $D-grey-1;
+  border-radius: 12px;
+  @include Paragraphs("P1/16", "Regular");
+}
+.sort-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.options-right {
+  height: fit-content;
+}

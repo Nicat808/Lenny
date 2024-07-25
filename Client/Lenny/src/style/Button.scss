@@ -1,0 +1,33 @@
+@import "../style/General.scss";
+
+button{
+    cursor: pointer;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transition: 0.3s ease-in-out;
+    }
+    @include Heading("H2")
+}
+.bg-White{
+    background-color: transparent;
+    color:$green-1;
+    border: 1px solid $green-1;
+    &:hover{
+        background-color: $green-1;
+        color: white;
+    }
+}
+.bg-Green{
+    background-color: $green-1;
+    color:white;
+    border: 1px solid $green-1;
+    &:hover{
+        background-color: transparent;
+        color: $green-1;
+    }
+}

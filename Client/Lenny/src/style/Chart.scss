@@ -1,0 +1,113 @@
+@import "../style/General.scss";
+.shop-chart {
+  margin-bottom: 240px;
+  margin-top: 60px;
+  h4 {
+    @include ExtraHeadings("Eh5");
+  }
+  span {
+    display: block;
+    @include Paragraphs("P1/16", "Regular");
+    color: $grey-1;
+    margin-bottom: 52px;
+  }
+  .chart-details-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    .chart-items {
+      width: 788px;
+    }
+  }
+}
+.product-summary {
+  border-radius: 12px;
+  border: 1px solid $D-grey-1;
+  width: 380px;
+  padding: 24px;
+  h4 {
+    @include ExtraHeadings("Eh6");
+    margin-bottom: 24px;
+  }
+  #noProd {
+    @include Paragraphs("P2", "Regular");
+  }
+}
+.chartProducts,
+#total-prices ,
+#chart-prod-name-price{
+  padding-bottom: 24px;
+  border-bottom: 1px solid $D-grey-1;
+}
+#total-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: $grey-1;
+  padding-top: 24px;
+}
+.total-price {
+  display: flex;
+  justify-content: space-between;
+}
+.last-chart-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0;
+  @include ExtraHeadings("Eh6");
+  color: $black-1;
+  margin-bottom: 60px;
+}
+.chart-items {
+  border-radius: 12px;
+  border: 1px solid $D-grey-1;
+  padding: 24px;
+}
+.chart-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 24px;
+  border-bottom: 1px solid $D-grey-1;
+  label{
+    height: fit-content !important;
+  }
+  .chrt-img-wrpr {
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+    background-color: $L-Grey-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chrt-img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+  }
+  .chart-item-details{
+    @include ExtraHeadings("Eh4");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    div{
+        color: $green-1;
+    }
+  }
+}
+#checkbox{
+    width: 20px;
+    height: 20px;
+}
+#trash-icon{
+    margin-left: auto;
+    cursor: pointer;
+}
+.chart-prod-res-item{
+    @include Paragraphs('P1/16',"Regular");
+    display: flex;
+    justify-content: space-between;
+}

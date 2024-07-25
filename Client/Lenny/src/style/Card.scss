@@ -1,0 +1,62 @@
+@import "../style/General.scss";
+.card{
+    cursor: pointer;
+    width: 280px;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transition: 0.3s ease-in-out;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+}
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  background-color: $L-Grey-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  margin-bottom: 16px;
+  .card-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+  .fav {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+  }
+}
+.product-details {
+  @include ExtraHeadings("Eh6");
+  display: flex;
+  justify-content: space-between;
+  .productName {
+    color: $black-1;
+  }
+  .productPrice {
+    color:$green-3
+  }
+}
+#location{
+    color: $grey-1;
+    @include Paragraphs("P1/16","Regular");
+    margin-top: 4px 0 8px 0;
+}
+.sold-out-header{
+  display: flex;
+  align-items:center;
+  @include Paragraphs("P1/16","Regular");
+  color: $black-1;
+  img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+  b{
+    margin: 0 20px 0 8px;
+  }
+}

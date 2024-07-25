@@ -1,0 +1,24 @@
+@import "../style/General.scss";
+.pagination{
+    display: flex;
+justify-content: center;
+align-items: center;
+color: red;
+}
+.ant-pagination-item{
+    border: 1px solid $D-grey-1 !important;
+    width: 44px;
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+:where(.css-dev-only-do-not-override-g68928).ant-pagination .ant-pagination-item-active
+a{
+    color:$green-1 !important;
+    @include Paragraphs("P2","Medium")
+}
+:where(.css-dev-only-do-not-override-g68928).ant-pagination .ant-pagination-item a{
+    color: $grey-1;
+}

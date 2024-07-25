@@ -1,0 +1,122 @@
+@mixin ExtraHeadings($name) {
+  @if $name == "Eh1" {
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: -0.2px;
+  } @else if $name == "Eh2" {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: -0.2px;
+  } @else if $name == "Eh3" {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: -0.2px;
+  } @else if $name == "Eh4" {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.2px;
+  } @else if $name == "Eh5" {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.2px;
+  } @else if $name == "Eh6" {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+  }
+}
+@mixin Heading($name) {
+  @if $name == "H1" {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+  } @else if $name == "H2" {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.2px;
+  } @else if $name == "H3" {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+  } @else if $name == "H4" {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.2px;
+  } @else if $name == "H5" {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+  } @else if $name == "Eh" {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+  }
+}
+@mixin Paragraphs($name, $type) {
+  @if $name == "P1/18" {
+    @if $type == "Regular" {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 29px;
+    } @else if $type == "Medium" {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 29px;
+    }
+  }
+  @if $name == "P1/16" {
+    @if $type == "Regular" {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+    } @else if $type == "Medium" {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  }
+  @if $name == "P2" {
+    @if $type == "Regular" {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    } @else if $type == "Medium" {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+  }
+  @if $name == "P3" {
+    @if $type == "Regular" {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 19px;
+    } @else if $type == "Medium" {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 19px;
+    }
+  }
+  @if $name == "P4" {
+    @if $type == "Regular" {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 16px;
+    } @else if $type == "Medium" {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+  }
+}

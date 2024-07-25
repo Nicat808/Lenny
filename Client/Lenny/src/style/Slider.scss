@@ -1,0 +1,90 @@
+@import "../style/General.scss";
+.SliderImage{
+    width: 100%;
+}
+.alice-carousel__prev-btn{
+    display: none;
+}
+.alice-carousel__next-btn{
+    background-image: url("../assets/Right.png");
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 52px;
+}
+.alice-carousel__dots{
+    display: none;
+}
+.slide{
+    position: relative;
+    width: 1440px !important;
+    height: 620px;
+    background-color:$D-grey-3;
+    padding: 100px 0 0 120px;
+    img{
+        width: 827px;
+        height: 620px;
+        position: absolute;
+        right: 0;
+        top:0
+    }
+    h1{
+        @include ExtraHeadings("Eh1");
+        color:$black-1;
+        width: 700px;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+        position: absolute;
+        z-index: 20;
+    }
+    span{
+        position: absolute;
+        top: 256px;
+        display: block;
+        width: 585px;
+     color:$grey-1;
+     @include Paragraphs("P1/18","Regular");
+    }
+    .buttons{
+        position: absolute;
+        bottom: 192px;
+        margin-top: 32px;
+    }
+}
+.nxt{
+    position: absolute;
+    right: 120px;
+    top: 284px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+}
+.next-btn{
+    margin: 11px;
+    width: 30px !important;
+    height:30px !important;
+}
+.slick-dots{
+    display: none !important;
+}
+
+// @media(max-width:1024px){
+//     .slide{
+//         width: 375px !important;
+//         padding: 52px 24px 0;
+//         img{
+//             width: 512px;
+//             height: 284px;
+//             right: 0;
+//             bottom: 0;
+//         }
+//         h1{
+//             @include ExtraHeadings("Eh4")
+//         }
+//         span{
+//             @include Paragraphs("P2","Regular")
+//         }
+//     }
+// }
